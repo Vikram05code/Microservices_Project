@@ -17,16 +17,16 @@ import javax.persistence.Table;
 public class User {
 
     @Id
-    @Column(name="ID")
+    @Column(name="Id")
     private String userId;
 
-    @Column(name="NAME")
+    @Column(name="name")
     private String name;
 
-    @Column(name="EMAIL")
+    @Column(name="email")
     private String email;
 
-    @Column(name="ABOUT")
+    @Column(name="about")
     private String about;
 
 
