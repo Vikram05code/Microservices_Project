@@ -28,6 +28,12 @@ public class UserController {
         return new ResponseEntity<>(userDto, HttpStatus.OK);
     }
 
+    @PutMapping("/update/{userId}")
+    public ResponseEntity<UserDto> updateUser(@RequestBody UserDto userDto, @PathVariable String userId){
+        UserDto updatedUserDto = userService.updateUser(userDto, userId);
+        return new ResponseEntity<>(updatedUserDto, HttpStatus.OK);
+    }
+
 
 
 }
